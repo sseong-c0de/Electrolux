@@ -154,6 +154,7 @@ nav {
 }
 .quickBtn {
   margin: 0 auto;
+  text-align: center;
 }
 .quickBtn a img {
   display: block;
@@ -161,7 +162,7 @@ nav {
   height: 50px;
   background: red;
   border-radius: 15px;
-  margin-bottom: 20px;
+  margin: 0 auto 20px;
 }
 .quickBtn a span {
   font-size: 1.6rem;
@@ -180,15 +181,20 @@ nav {
   margin-bottom: 30px;
 }
 .productList {
-  width: 74%;
+  width: 100%;
 }
 .productItem {
-  width: 100%;
+  width: 74%;
+  max-width: 222px;
 }
 .productLink {
   display: block;
   width: 100%;
   height: 100%;
+}
+.thumb {
+  width: 100%;
+  height: 222px;
 }
 .thumb picture {
   display: block;
@@ -318,7 +324,7 @@ nav {
   margin: 0 auto;
   line-height: 1.2;
 }
-.serviceBottomm,
+.serviceBottom,
 .stepBottom {
   margin-top: 20px;
 }
@@ -327,15 +333,844 @@ nav {
 }
 footer {
   margin-top: 50px;
-  background: #5f5757;
+  background: #a5a5a5;
 }
 .footerWrap {
   width: 83.33%;
   margin: 0 auto;
 }
+.footerContainer {
+  padding-top: 20px;
+  text-align: center;
+  font-size: 1.6rem;
+}
 .footerLogo {
   width: 250px;
   height: 50px;
-  margin: 30px auto 0;
+  margin: 0 auto 30px;
   background: #000000;
+}
+.footerInfo p {
+  margin-bottom: 5px;
+}
+.footerInfo p:last-child {
+  margin-bottom: 0px;
+}
+.footerPolicy {
+  margin-top: 30px;
+  line-height: 1.3;
+}
+
+.footerPolicy span:nth-child(3) {
+  display: block;
+}
+.footerIcons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+.icon {
+  width: 80px;
+  height: 80px;
+  border-radius: 20px;
+  background: #000;
+}
+.footerNotice {
+  margin-top: 30px;
+  padding-bottom: 30px;
+  line-height: 1.5;
+}
+/* 태블릿 시작 */
+@media screen and (min-width: 768px) {
+  .headerWrap {
+    width: 100%;
+  }
+  .headerTop {
+    width: 86.98%;
+    height: 65px;
+    margin: 0 auto;
+    background: rgb(83, 102, 5);
+  }
+  .headerTopInner {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .h1Wrap {
+    font-size: 0;
+    width: 152px;
+    height: 50px;
+  }
+  .h1Wrap h1 {
+    width: 100%;
+    height: 100%;
+  }
+  .h1Wrap h1 a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: url(/img/pngegg.png) no-repeat center/cover;
+  }
+  .loginWrap {
+    display: none;
+  }
+  .mBtn {
+    width: 35px;
+    height: 35px;
+    background: none;
+  }
+  .mBtn span {
+    display: block;
+    width: 100%;
+    height: 5px;
+    margin-bottom: 5px;
+    background: #000;
+  }
+  .mBtn span:last-child {
+    margin-bottom: 0px;
+  }
+  nav {
+    display: none;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background: #9b7575;
+  }
+  .gnb {
+    width: 100%;
+  }
+  .navInner {
+    width: 100%;
+    font-size: 1.8rem;
+  }
+  .navWrap {
+    margin-top: 100px;
+  }
+  .navInner ul {
+    border-bottom: 3px solid #000;
+    padding: 30px;
+  }
+  .navInner ul:first-child {
+    padding-top: 0px;
+  }
+  .navLink {
+    margin-bottom: 30px;
+  }
+  .navLink > a {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+  .navWrap li:nth-child(5),
+  .navEtc li:nth-child(2),
+  .navLogin li:nth-child(2) {
+    margin-bottom: 0;
+  }
+  .submenuNavi {
+    display: none;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgb(134, 131, 131);
+  }
+  .subMenuHeader {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+  }
+  .subMneubtn {
+    font-size: 3rem;
+    background: none;
+    position: absolute;
+    left: 30px;
+  }
+  .subMenuTitle span {
+    font-size: 2.4rem;
+  }
+  .subMenuWrap {
+    margin-top: 50px;
+  }
+  .subMenuItem {
+    width: 100%;
+    padding: 20px 30px 20px 30px;
+  }
+  .visual {
+    width: 100%;
+  }
+  .visualWrap {
+    width: 100%;
+    height: 500px;
+    background: #d9d9d9;
+  }
+  .visualImg {
+    width: 100%;
+    height: 100%;
+  }
+  .quick {
+    width: 100%;
+    margin-top: 100px;
+  }
+  .quickWrap {
+    width: 86.98%;
+    margin: 0 auto;
+    display: flex;
+  }
+  .quickInnerTop {
+    width: 60%;
+    margin: 0 auto 30px;
+    display: flex;
+    justify-content: space-between;
+  }
+  .quickInnerBottom {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+  }
+  .quickBtn {
+    margin: 0 auto;
+  }
+  .quickBtn a img {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: red;
+    border-radius: 15px;
+    margin-bottom: 20px;
+  }
+  .quickBtn a span {
+    font-size: 1.8rem;
+  }
+  .product {
+    width: 100%;
+    margin-top: 100px;
+  }
+  .categoryBox {
+    width: 86.98%;
+    margin: 0 auto;
+  }
+  .categoryTitle {
+    font-size: 3rem;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  .productList {
+    width: 100%;
+  }
+  .productItem {
+    width: 35.63%;
+    max-width: 238px;
+  }
+  .productLink {
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+  .thumb {
+    width: 100%;
+    height: 238px;
+  }
+  .thumb picture {
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+  .thumb picture img {
+    width: 100%;
+    height: 100%;
+  }
+  .title,
+  .price {
+    margin-top: 25px;
+  }
+  .title span {
+    font-size: 2rem;
+  }
+  .price {
+    display: flex;
+    justify-content: space-between;
+  }
+  .priceCurrent span {
+    font-size: 1.8rem;
+  }
+  .priceOriginal span {
+    font-size: 1.6rem;
+    text-decoration: line-through;
+  }
+  .showcase {
+    margin-top: 100px;
+  }
+  .showcaseWrap {
+    width: 86.98%;
+    margin: 0 auto;
+  }
+  .showcaseItem {
+    width: 100%;
+  }
+  .showcaseThumb {
+    width: 100%;
+    height: 400px;
+    color: #d9d9d9;
+    position: relative;
+  }
+  .showcaseThumb img {
+    width: 100%;
+    height: 100%;
+  }
+  .showcaseText {
+    position: absolute;
+    left: 30px;
+    bottom: 30px;
+  }
+  .showcaseText div {
+    margin-bottom: 20px;
+  }
+  .showcaseText div:nth-child(3) {
+    margin-bottom: 0px;
+  }
+  .showcaseTitle {
+    font-size: 2.6rem;
+  }
+  .showcaseDesc {
+    font-size: 1.8rem;
+  }
+  .showcaseDesc span {
+    display: block;
+    line-height: 1.2;
+  }
+
+  .showcaseLink a {
+    font-size: 1.6rem;
+    color: #d9d9d9;
+    display: flex;
+  }
+  .showcaseItem {
+    margin-bottom: 30px;
+  }
+  .showcaseItemBottom .showcaseItem:nth-child(2) {
+    margin-bottom: 0;
+  }
+  .dot {
+    display: block;
+    width: 15px;
+    height: 15px;
+    border-radius: 15px;
+    background: #d9d9d9;
+    margin-left: 10px;
+  }
+  .subscription {
+    margin-top: 100px;
+  }
+  .subscriptionWrap {
+    width: 86.98%;
+    margin: 0 auto;
+  }
+  .serviceName,
+  .stepName {
+    font-size: 3rem;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .serviceBottom,
+  .serviceTop,
+  .stepBottom,
+  .stepTop {
+    width: 100%;
+    display: flex;
+  }
+  .serviceCard {
+    width: 100%;
+    text-align: center;
+  }
+  .serviceIcon {
+    width: 125px;
+    height: 125px;
+    border-radius: 30px;
+    background: #9b7575;
+    margin: 0 auto;
+  }
+  .serviceTitle {
+    font-size: 2.4rem;
+    margin: 20px 0 15px 0;
+  }
+  .serviceDesc {
+    font-size: 1.8rem;
+    width: 80%;
+    margin: 0 auto;
+    line-height: 1.2;
+  }
+  .serviceBottom,
+  .stepBottom {
+    margin-top: 20px;
+  }
+  .subscriptionSteps {
+    margin-top: 50px;
+  }
+  footer {
+    margin-top: 50px;
+    background: #a5a5a5;
+  }
+  .footerWrap {
+    width: 86.98%;
+    margin: 0 auto;
+  }
+  .footerContainer {
+    padding-top: 50px;
+    text-align: center;
+    font-size: 1.8rem;
+  }
+  .footerLogo {
+    width: 250px;
+    height: 50px;
+    margin: 0 auto 30px;
+    background: #000000;
+  }
+  .footerInfo p {
+    margin-bottom: 10px;
+  }
+  .footerInfo p:last-child {
+    margin-bottom: 0px;
+  }
+  .footerPolicy {
+    margin-top: 30px;
+    line-height: 1.3;
+  }
+
+  .footerPolicy span:nth-child(3) {
+    display: block;
+  }
+  .footerIcons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+  }
+  .icon {
+    width: 80px;
+    height: 80px;
+    border-radius: 20px;
+    background: #000;
+  }
+  .footerNotice {
+    margin-top: 30px;
+    padding-bottom: 30px;
+    line-height: 1.5;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .headerWrap {
+    width: 100%;
+  }
+  .headerTop {
+    width: 88.28%;
+    height: 90px;
+    margin: 0 auto;
+    background: rgb(83, 102, 5);
+  }
+  .headerTopInner {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .h1Wrap {
+    font-size: 0;
+    width: 152px;
+    height: 50px;
+  }
+  .h1Wrap h1 {
+    width: 100%;
+    height: 100%;
+  }
+  .h1Wrap h1 a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: url(/img/pngegg.png) no-repeat center/cover;
+  }
+  .loginWrap {
+    display: block;
+    font-size: 1.8rem;
+  }
+  .loginWrap a:nth-child(1) {
+    margin-right: 30px;
+  }
+  .mBtn {
+    display: none;
+    width: 35px;
+    height: 35px;
+    background: none;
+  }
+  .mBtn span {
+    display: block;
+    width: 100%;
+    height: 5px;
+    margin-bottom: 5px;
+    background: #000;
+  }
+  .mBtn span:last-child {
+    margin-bottom: 0px;
+  }
+  nav {
+    display: block;
+    position: static;
+    width: 88.28%;
+    height: auto;
+    margin: 0 auto;
+    background: #9b7575;
+  }
+  .gnb {
+    width: 100%;
+  }
+  .navInner {
+    width: 100%;
+    height: 50px;
+    font-size: 1.8rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .navWrap {
+    display: flex;
+    width: 40%;
+    max-width: 372px;
+    justify-content: space-between;
+    margin-top: 0px;
+  }
+  .navEtc {
+    display: flex;
+    width: 18%;
+    max-width: 150px;
+    justify-content: space-between;
+  }
+  .navInner ul {
+    border-bottom: 0px solid #000;
+    padding: 0px;
+  }
+  .navInner ul:first-child {
+    padding-top: 0px;
+  }
+  .navLink {
+    margin-bottom: 0px;
+  }
+  .navLink > a {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+  .navLink a span:nth-child(2) {
+    display: none;
+  }
+  .navWrap li:nth-child(5),
+  .navEtc li:nth-child(2),
+  .navLogin li:nth-child(2) {
+    margin-bottom: 0;
+  }
+  .navLogin {
+    display: none;
+  }
+  .submenuNavi {
+    display: none;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgb(134, 131, 131);
+  }
+  .subMenuHeader {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+  }
+  .subMneubtn {
+    font-size: 3rem;
+    background: none;
+    position: absolute;
+    left: 30px;
+  }
+  .subMenuTitle span {
+    font-size: 2.4rem;
+  }
+  .subMenuWrap {
+    margin-top: 50px;
+  }
+  .subMenuItem {
+    width: 100%;
+    padding: 20px 30px 20px 30px;
+  }
+  .visual {
+    width: 100%;
+  }
+  .visualWrap {
+    width: 100%;
+    height: 500px;
+    background: #d9d9d9;
+  }
+  .visualImg {
+    width: 100%;
+    height: 100%;
+  }
+  .quick {
+    width: 100%;
+    margin-top: 100px;
+  }
+  .quickWrap {
+    width: 86.98%;
+    margin: 0 auto;
+    display: flex;
+  }
+  .quickInnerTop {
+    width: 60%;
+    margin: 0 auto 30px;
+    display: flex;
+    justify-content: space-between;
+  }
+  .quickInnerBottom {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+  }
+  .quickBtn {
+    margin: 0 auto;
+  }
+  .quickBtn a img {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: red;
+    border-radius: 15px;
+    margin-bottom: 20px;
+  }
+  .quickBtn a span {
+    font-size: 1.8rem;
+  }
+  .product {
+    width: 100%;
+    margin-top: 100px;
+  }
+  .categoryBox {
+    width: 86.98%;
+    margin: 0 auto;
+  }
+  .categoryTitle {
+    font-size: 3rem;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  .productList {
+    width: 100%;
+  }
+  .productItem {
+    width: 35.63%;
+    max-width: 238px;
+  }
+  .productLink {
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+  .thumb {
+    width: 100%;
+    height: 238px;
+  }
+  .thumb picture {
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+  .thumb picture img {
+    width: 100%;
+    height: 100%;
+  }
+  .title,
+  .price {
+    margin-top: 25px;
+  }
+  .title span {
+    font-size: 2rem;
+  }
+  .price {
+    display: flex;
+    justify-content: space-between;
+  }
+  .priceCurrent span {
+    font-size: 1.8rem;
+  }
+  .priceOriginal span {
+    font-size: 1.6rem;
+    text-decoration: line-through;
+  }
+  .showcase {
+    margin-top: 100px;
+  }
+  .showcaseWrap {
+    width: 86.98%;
+    margin: 0 auto;
+  }
+  .showcaseItem {
+    width: 100%;
+  }
+  .showcaseThumb {
+    width: 100%;
+    height: 400px;
+    color: #d9d9d9;
+    position: relative;
+  }
+  .showcaseThumb img {
+    width: 100%;
+    height: 100%;
+  }
+  .showcaseText {
+    position: absolute;
+    left: 30px;
+    bottom: 30px;
+  }
+  .showcaseText div {
+    margin-bottom: 20px;
+  }
+  .showcaseText div:nth-child(3) {
+    margin-bottom: 0px;
+  }
+  .showcaseTitle {
+    font-size: 2.6rem;
+  }
+  .showcaseDesc {
+    font-size: 1.8rem;
+  }
+  .showcaseDesc span {
+    display: block;
+    line-height: 1.2;
+  }
+
+  .showcaseLink a {
+    font-size: 1.6rem;
+    color: #d9d9d9;
+    display: flex;
+  }
+  .showcaseItem {
+    margin-bottom: 30px;
+  }
+  .showcaseItemBottom .showcaseItem:nth-child(2) {
+    margin-bottom: 0;
+  }
+  .dot {
+    display: block;
+    width: 15px;
+    height: 15px;
+    border-radius: 15px;
+    background: #d9d9d9;
+    margin-left: 10px;
+  }
+  .subscription {
+    margin-top: 100px;
+  }
+  .subscriptionWrap {
+    width: 86.98%;
+    margin: 0 auto;
+  }
+  .serviceName,
+  .stepName {
+    font-size: 3rem;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .serviceBottom,
+  .serviceTop,
+  .stepBottom,
+  .stepTop {
+    width: 100%;
+    display: flex;
+  }
+  .serviceCard {
+    width: 100%;
+    text-align: center;
+  }
+  .serviceIcon {
+    width: 125px;
+    height: 125px;
+    border-radius: 30px;
+    background: #9b7575;
+    margin: 0 auto;
+  }
+  .serviceTitle {
+    font-size: 2.4rem;
+    margin: 20px 0 15px 0;
+  }
+  .serviceDesc {
+    font-size: 1.8rem;
+    width: 80%;
+    margin: 0 auto;
+    line-height: 1.2;
+  }
+  .serviceBottom,
+  .stepBottom {
+    margin-top: 20px;
+  }
+  .subscriptionSteps {
+    margin-top: 50px;
+  }
+  footer {
+    margin-top: 50px;
+    background: #a5a5a5;
+  }
+  .footerWrap {
+    width: 86.98%;
+    margin: 0 auto;
+  }
+  .footerContainer {
+    padding-top: 50px;
+    text-align: center;
+    font-size: 1.8rem;
+  }
+  .footerLogo {
+    width: 250px;
+    height: 50px;
+    margin: 0 auto 30px;
+    background: #000000;
+  }
+  .footerInfo p {
+    margin-bottom: 10px;
+  }
+  .footerInfo p:last-child {
+    margin-bottom: 0px;
+  }
+  .footerPolicy {
+    margin-top: 30px;
+    line-height: 1.3;
+  }
+
+  .footerPolicy span:nth-child(3) {
+    display: block;
+  }
+  .footerIcons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+  }
+  .icon {
+    width: 80px;
+    height: 80px;
+    border-radius: 20px;
+    background: #000;
+  }
+  .footerNotice {
+    margin-top: 30px;
+    padding-bottom: 30px;
+    line-height: 1.5;
+  }
 }
