@@ -838,6 +838,7 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: relative;
   }
 
   .navWrap {
@@ -854,15 +855,21 @@ footer {
     justify-content: space-between;
   }
   .navInner ul {
+    height: 100%;
+    line-height: 50px;
     border-bottom: 0px solid #000;
     padding: 0px;
   }
+
   .navInner ul:first-child {
     padding-top: 0px;
   }
   .navLink {
     margin-bottom: 0px;
   }
+  /* .navLink:nth-of-type(1) {
+    position: relative;
+  } */
   .navLink > a {
     width: 100%;
     display: flex;
@@ -879,19 +886,23 @@ footer {
   .navLogin {
     display: none;
   }
+
   .submenuNavi {
     display: none;
-    width: 100%;
-    height: 100%;
-    position: fixed;
-    top: 0;
+    width: 160px;
+    height: auto;
+    position: absolute;
+    top: 100%;
     left: 0;
     background: rgb(134, 131, 131);
   }
+  .navLink:nth-of-type(1):hover .submenuNavi {
+    display: block;
+  }
   .subMenuHeader {
+    display: none;
     width: 100%;
     height: 50px;
-    display: flex;
     align-items: center;
     justify-content: center;
     position: relative;
@@ -906,11 +917,11 @@ footer {
     font-size: 2.4rem;
   }
   .subMenuWrap {
-    margin-top: 50px;
+    margin-top: 0px;
   }
   .subMenuItem {
     width: 100%;
-    padding: 20px 30px 20px 30px;
+    padding: 10px 0px 0px 0px;
   }
   .visual {
     width: 100%;
@@ -929,7 +940,7 @@ footer {
     margin-top: 100px;
   }
   .quickWrap {
-    width: 86.98%;
+    width: 88.28%;
     margin: 0 auto;
     display: flex;
   }
@@ -950,21 +961,21 @@ footer {
   }
   .quickBtn a img {
     display: block;
-    width: 50px;
-    height: 50px;
+    width: 80px;
+    height: 80px;
     background: red;
-    border-radius: 15px;
+    border-radius: 20px;
     margin-bottom: 20px;
   }
   .quickBtn a span {
-    font-size: 1.8rem;
+    font-size: 2rem;
   }
   .product {
     width: 100%;
     margin-top: 100px;
   }
   .categoryBox {
-    width: 86.98%;
+    width: 88.28%;
     margin: 0 auto;
   }
   .categoryTitle {
@@ -976,8 +987,8 @@ footer {
     width: 100%;
   }
   .productItem {
-    width: 35.63%;
-    max-width: 238px;
+    width: 31.86%;
+    max-width: 288px;
   }
   .productLink {
     display: block;
@@ -986,7 +997,7 @@ footer {
   }
   .thumb {
     width: 100%;
-    height: 238px;
+    height: 288px;
   }
   .thumb picture {
     display: block;
@@ -1019,7 +1030,7 @@ footer {
     margin-top: 100px;
   }
   .showcaseWrap {
-    width: 86.98%;
+    width: 88.28%;
     margin: 0 auto;
   }
   .showcaseItem {
@@ -1027,7 +1038,7 @@ footer {
   }
   .showcaseThumb {
     width: 100%;
-    height: 400px;
+    height: 500px;
     color: #d9d9d9;
     position: relative;
   }
@@ -1080,7 +1091,7 @@ footer {
     margin-top: 100px;
   }
   .subscriptionWrap {
-    width: 86.98%;
+    width: 88.28%;
     margin: 0 auto;
   }
   .serviceName,
@@ -1088,6 +1099,10 @@ footer {
     font-size: 3rem;
     text-align: center;
     margin-bottom: 20px;
+  }
+  .serviceWrap,
+  .stepWrap {
+    display: flex;
   }
   .serviceBottom,
   .serviceTop,
@@ -1119,7 +1134,7 @@ footer {
   }
   .serviceBottom,
   .stepBottom {
-    margin-top: 20px;
+    margin-top: 0px;
   }
   .subscriptionSteps {
     margin-top: 50px;
@@ -1129,7 +1144,7 @@ footer {
     background: #a5a5a5;
   }
   .footerWrap {
-    width: 86.98%;
+    width: 88.28%;
     margin: 0 auto;
   }
   .footerContainer {
@@ -1143,6 +1158,10 @@ footer {
     margin: 0 auto 30px;
     background: #000000;
   }
+  .footerInfo {
+    float: left;
+    text-align: left;
+  }
   .footerInfo p {
     margin-bottom: 10px;
   }
@@ -1150,6 +1169,8 @@ footer {
     margin-bottom: 0px;
   }
   .footerPolicy {
+    float: right;
+    text-align: left;
     margin-top: 30px;
     line-height: 1.3;
   }
@@ -1158,9 +1179,451 @@ footer {
     display: block;
   }
   .footerIcons {
+    width: 33%;
+    max-width: 300px;
+    clear: both;
     display: flex;
     justify-content: space-between;
+    margin: 0 auto;
+    padding-top: 50px;
+  }
+  .icon {
+    width: 80px;
+    height: 80px;
+    border-radius: 20px;
+    background: #000;
+  }
+  .footerNotice {
     margin-top: 30px;
+    padding-bottom: 30px;
+    line-height: 1.5;
+  }
+}
+@media screen and (min-width: 1700px) {
+  .headerWrap {
+    width: 100%;
+  }
+  .headerTop {
+    width: 1600px;
+    height: 90px;
+    margin: 0 auto;
+    background: rgb(83, 102, 5);
+  }
+  .headerTopInner {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .h1Wrap {
+    font-size: 0;
+    width: 152px;
+    height: 50px;
+  }
+  .h1Wrap h1 {
+    width: 100%;
+    height: 100%;
+  }
+  .h1Wrap h1 a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: url(/img/pngegg.png) no-repeat center/cover;
+  }
+  .loginWrap {
+    display: block;
+    font-size: 1.8rem;
+  }
+  .loginWrap a:nth-child(1) {
+    margin-right: 30px;
+  }
+  .mBtn {
+    display: none;
+    width: 35px;
+    height: 35px;
+    background: none;
+  }
+  .mBtn span {
+    display: block;
+    width: 100%;
+    height: 5px;
+    margin-bottom: 5px;
+    background: #000;
+  }
+  .mBtn span:last-child {
+    margin-bottom: 0px;
+  }
+  nav {
+    display: block;
+    position: static;
+    width: 1600px;
+    height: auto;
+    margin: 0 auto;
+    background: #9b7575;
+  }
+  .gnb {
+    width: 100%;
+  }
+  .navInner {
+    width: 100%;
+    height: 50px;
+    font-size: 1.8rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+  }
+
+  .navWrap {
+    display: flex;
+    width: 40%;
+    max-width: 372px;
+    justify-content: space-between;
+    margin-top: 0px;
+  }
+  .navEtc {
+    display: flex;
+    width: 18%;
+    max-width: 150px;
+    justify-content: space-between;
+  }
+  .navInner ul {
+    height: 100%;
+    border-bottom: 0px solid #000;
+    padding: 0px;
+  }
+  .navInner ul:first-child {
+    padding-top: 0px;
+  }
+  .navLink {
+    margin-bottom: 0px;
+  }
+  .navLink > a {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+  .navLink a span:nth-child(2) {
+    display: none;
+  }
+  .navWrap li:nth-child(5),
+  .navEtc li:nth-child(2),
+  .navLogin li:nth-child(2) {
+    margin-bottom: 0;
+  }
+  .navLogin {
+    display: none;
+  }
+
+  .submenuNavi {
+    display: none;
+    width: 160px;
+    height: auto;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: rgb(134, 131, 131);
+  }
+  .navLink:nth-of-type(1):hover .submenuNavi {
+    display: block;
+  }
+  .subMenuHeader {
+    display: none;
+    width: 100%;
+    height: 50px;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+  }
+  .subMneubtn {
+    font-size: 3rem;
+    background: none;
+    position: absolute;
+    left: 30px;
+  }
+  .subMenuTitle span {
+    font-size: 2.4rem;
+  }
+  .subMenuWrap {
+    margin-top: 0px;
+  }
+  .subMenuItem {
+    width: 100%;
+    padding: 10px 0px 0px 0px;
+  }
+  .visual {
+    width: 100%;
+  }
+  .visualWrap {
+    width: 100%;
+    height: 600px;
+    background: #d9d9d9;
+  }
+  .visualImg {
+    width: 100%;
+    height: 100%;
+  }
+  .quick {
+    width: 100%;
+    margin-top: 100px;
+  }
+  .quickWrap {
+    width: 1000px;
+    margin: 0 auto;
+    display: flex;
+  }
+  .quickInnerTop {
+    width: 60%;
+    margin: 0 auto 30px;
+    display: flex;
+    justify-content: space-between;
+  }
+  .quickInnerBottom {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+  }
+  .quickBtn {
+    margin: 0 auto;
+  }
+  .quickBtn a img {
+    display: block;
+    width: 80px;
+    height: 80px;
+    background: red;
+    border-radius: 20px;
+    margin-bottom: 20px;
+  }
+  .quickBtn a span {
+    font-size: 2rem;
+  }
+  .product {
+    width: 100%;
+    margin-top: 100px;
+  }
+  .categoryBox {
+    width: 1600px;
+    margin: 0 auto;
+  }
+  .categoryTitle {
+    font-size: 3rem;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  .productList {
+    width: 100%;
+  }
+  .productItem {
+    width: 25%;
+    max-width: 365px;
+  }
+  .productLink {
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+  .thumb {
+    width: 100%;
+    height: 365px;
+  }
+  .thumb picture {
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+  .thumb picture img {
+    width: 100%;
+    height: 100%;
+  }
+  .title,
+  .price {
+    margin-top: 25px;
+  }
+  .title span {
+    font-size: 2rem;
+  }
+  .price {
+    display: flex;
+    justify-content: space-between;
+  }
+  .priceCurrent span {
+    font-size: 1.8rem;
+  }
+  .priceOriginal span {
+    font-size: 1.6rem;
+    text-decoration: line-through;
+  }
+  .showcase {
+    margin-top: 100px;
+  }
+  .showcaseWrap {
+    width: 1600px;
+    margin: 0 auto;
+  }
+  .showcaseItemBottom {
+    display: flex;
+    justify-content: space-between;
+  }
+  .showcaseItem {
+    width: 100%;
+  }
+  .showcaseItemBottom .showcaseItem {
+    width: 49%;
+  }
+  .showcaseThumb {
+    width: 100%;
+    height: 500px;
+    color: #d9d9d9;
+    position: relative;
+  }
+  .showcaseThumb img {
+    width: 100%;
+    height: 100%;
+  }
+  .showcaseText {
+    position: absolute;
+    left: 30px;
+    bottom: 30px;
+  }
+  .showcaseText div {
+    margin-bottom: 20px;
+  }
+  .showcaseText div:nth-child(3) {
+    margin-bottom: 0px;
+  }
+  .showcaseTitle {
+    font-size: 2.6rem;
+  }
+  .showcaseDesc {
+    font-size: 1.8rem;
+  }
+  .showcaseDesc span {
+    display: block;
+    line-height: 1.2;
+  }
+
+  .showcaseLink a {
+    font-size: 1.6rem;
+    color: #d9d9d9;
+    display: flex;
+  }
+  .showcaseItem {
+    margin-bottom: 30px;
+  }
+  .showcaseItemBottom .showcaseItem:nth-child(2) {
+    margin-bottom: 0;
+  }
+  .dot {
+    display: block;
+    width: 15px;
+    height: 15px;
+    border-radius: 15px;
+    background: #d9d9d9;
+    margin-left: 10px;
+  }
+  .subscription {
+    margin-top: 100px;
+  }
+  .subscriptionWrap {
+    width: 1600px;
+    margin: 0 auto;
+  }
+  .serviceName,
+  .stepName {
+    font-size: 3rem;
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  .serviceWrap,
+  .stepWrap {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+  }
+  .serviceBottom,
+  .serviceTop,
+  .stepBottom,
+  .stepTop {
+    width: 100%;
+    display: flex;
+  }
+  .serviceCard {
+    width: 100%;
+    text-align: center;
+  }
+  .serviceIcon {
+    width: 125px;
+    height: 125px;
+    border-radius: 30px;
+    background: #9b7575;
+    margin: 0 auto;
+  }
+  .serviceTitle {
+    font-size: 2.4rem;
+    margin: 20px 0 15px 0;
+  }
+  .serviceDesc {
+    font-size: 1.8rem;
+    width: 80%;
+    margin: 0 auto;
+    line-height: 1.2;
+  }
+  .serviceBottom,
+  .stepBottom {
+    margin-top: 0px;
+  }
+  .subscriptionSteps {
+    margin-top: 50px;
+  }
+  footer {
+    margin-top: 50px;
+    background: #a5a5a5;
+  }
+  .footerWrap {
+    width: 1600px;
+    margin: 0 auto;
+  }
+  .footerContainer {
+    padding-top: 50px;
+    text-align: center;
+    font-size: 1.8rem;
+  }
+  .footerLogo {
+    width: 250px;
+    height: 50px;
+    margin: 0 auto 30px;
+    background: #000000;
+  }
+  .footerInfo {
+    float: left;
+    text-align: left;
+  }
+  .footerInfo p {
+    margin-bottom: 10px;
+  }
+  .footerInfo p:last-child {
+    margin-bottom: 0px;
+  }
+  .footerPolicy {
+    float: right;
+    text-align: left;
+    margin-top: 30px;
+    line-height: 1.3;
+  }
+
+  .footerPolicy span:nth-child(3) {
+    display: block;
+  }
+  .footerIcons {
+    width: 33%;
+    max-width: 300px;
+    clear: both;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding-top: 50px;
   }
   .icon {
     width: 80px;
