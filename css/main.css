@@ -57,6 +57,12 @@ nav {
   top: 0;
   background: #9b7575;
 }
+.closeBtn {
+  display: block;
+  font-size: 5rem;
+  background: none;
+  margin: 20px 20px 0 auto;
+}
 .gnb {
   width: 100%;
 }
@@ -827,6 +833,9 @@ footer {
     height: auto;
     margin: 0 auto;
     background: #9b7575;
+  }
+  .closeBtn {
+    display: none;
   }
   .gnb {
     width: 100%;

@@ -4,8 +4,17 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Electrolux</title>
-    <link rel="stylesheet" href="reset.css" />
-    <link rel="stylesheet" href="main.css" />
+    <link rel="stylesheet" href="css/reset.css" />
+    <!-- <link rel="stylesheet" href="css/main.css" /> -->
+    <link rel="stylesheet" href="css/mobile.css" />
+    <link rel="stylesheet" href="css/tablet.css" />
+    <link rel="stylesheet" href="css/laptop.css" />
+    <link rel="stylesheet" href="css/desktop.css" />
+    <link rel="stylesheet" href="css/motion.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
   </head>
   <body>
     <header>
@@ -30,14 +39,15 @@
         </div>
         <h2 class="screen_out">main-navigation</h2>
         <nav>
+          <button type="button" class="closeBtn">x</button>
           <div class="gnb">
             <div class="navInner">
               <ul class="navWrap">
                 <li class="navLink">
                   <a href="#"><span>제품</span><span>></span></a>
-                  <div class="submenuNavi">
+                  <div class="subMenuNavi">
                     <div class="subMenuHeader">
-                      <button type="button" class="subMneubtn"><</button>
+                      <button type="button" class="subMenuBtn"><</button>
                       <div class="subMenuTitle">
                         <span>제품</span>
                       </div>
@@ -104,13 +114,13 @@
       <section class="quick">
         <div class="quickWrap">
           <div class="quickInnerTop">
-            <div class="quickBtn">
+            <div class="quickBtn scaleHover">
               <a href="#">
                 <img alt="#" />
                 <span> 모든제품</span>
               </a>
             </div>
-            <div class="quickBtn">
+            <div class="quickBtn scaleHover">
               <a href="#">
                 <img alt="#" />
                 <span>이벤트</span>
@@ -118,13 +128,13 @@
             </div>
           </div>
           <div class="quickInnerBottom">
-            <div class="quickBtn">
+            <div class="quickBtn scaleHover">
               <a href="#"> <img alt="#" /><span>고객센터</span></a>
             </div>
-            <div class="quickBtn">
+            <div class="quickBtn scaleHover">
               <a href="#"> <img alt="#" /><span>프로모션</span></a>
             </div>
-            <div class="quickBtn">
+            <div class="quickBtn scaleHover">
               <a href="#"> <img alt="#" /><span>정기구독</span></a>
             </div>
           </div>
@@ -133,575 +143,727 @@
       <section class="product">
         <div class="categoryBox">
           <h2 class="categoryTitle">베스트 상품</h2>
-          <ul class="productList">
-            <li class="productItem">
-              <a href="#" class="productLink">
-                <div class="thumb">
-                  <picture>
-                    <source srcset="img/포트폴리오1920.png" type="image/png" />
-                    <img src="img/포트폴리오1920.png" alt="베스트상품 이미지" />
-                  </picture>
-                </div>
-                <div class="thumbText">
-                  <div class="title">
-                    <span>title</span>
+          <div class="productWrap swiper productSwiper">
+            <ul class="productList swiper-wrapper">
+              <li class="productItem swiper-slide">
+                <a href="#" class="productLink">
+                  <div class="thumb">
+                    <picture>
+                      <source
+                        srcset="img/포트폴리오1920.png"
+                        type="image/png"
+                      />
+                      <img
+                        src="img/포트폴리오1920.png"
+                        alt="베스트상품 이미지"
+                      />
+                    </picture>
                   </div>
-                  <div class="price">
-                    <div class="priceCurrent">
-                      <span>12,000원</span>
+                  <div class="thumbText">
+                    <div class="title">
+                      <span>title</span>
                     </div>
-                    <div class="priceOriginal">
-                      <span>20,000원</span>
-                    </div>
-                  </div>
-                </div>
-              </a>
-            </li>
-            <li class="productItem">
-              <a href="#" class="productLink">
-                <div class="thumb">
-                  <picture>
-                    <source srcset="img/포트폴리오1920.png" type="image/png" />
-                    <img src="img/포트폴리오1920.png" alt="베스트상품 이미지" />
-                  </picture>
-                </div>
-                <div class="thumbText">
-                  <div class="title">
-                    <span>title</span>
-                  </div>
-                  <div class="price">
-                    <div class="priceCurrent">
-                      <span>12,000원</span>
-                    </div>
-                    <div class="priceOriginal">
-                      <span>20,000원</span>
+                    <div class="price">
+                      <div class="priceCurrent">
+                        <span>12,000원</span>
+                      </div>
+                      <div class="priceOriginal">
+                        <span>20,000원</span>
+                      </div>
                     </div>
                   </div>
-                </div>
-              </a>
-            </li>
-            <li class="productItem">
-              <a href="#" class="productLink">
-                <div class="thumb">
-                  <picture>
-                    <source srcset="img/포트폴리오1920.png" type="image/png" />
-                    <img src="img/포트폴리오1920.png" alt="베스트상품 이미지" />
-                  </picture>
-                </div>
-                <div class="thumbText">
-                  <div class="title">
-                    <span>title</span>
+                </a>
+              </li>
+              <li class="productItem swiper-slide">
+                <a href="#" class="productLink">
+                  <div class="thumb">
+                    <picture>
+                      <source
+                        srcset="img/포트폴리오1920.png"
+                        type="image/png"
+                      />
+                      <img
+                        src="img/포트폴리오1920.png"
+                        alt="베스트상품 이미지"
+                      />
+                    </picture>
                   </div>
-                  <div class="price">
-                    <div class="priceCurrent">
-                      <span>12,000원</span>
+                  <div class="thumbText">
+                    <div class="title">
+                      <span>title</span>
                     </div>
-                    <div class="priceOriginal">
-                      <span>20,000원</span>
-                    </div>
-                  </div>
-                </div>
-              </a>
-            </li>
-            <li class="productItem">
-              <a href="#" class="productLink">
-                <div class="thumb">
-                  <picture>
-                    <source srcset="img/포트폴리오1920.png" type="image/png" />
-                    <img src="img/포트폴리오1920.png" alt="베스트상품 이미지" />
-                  </picture>
-                </div>
-                <div class="thumbText">
-                  <div class="title">
-                    <span>title</span>
-                  </div>
-                  <div class="price">
-                    <div class="priceCurrent">
-                      <span>12,000원</span>
-                    </div>
-                    <div class="priceOriginal">
-                      <span>20,000원</span>
+                    <div class="price">
+                      <div class="priceCurrent">
+                        <span>12,000원</span>
+                      </div>
+                      <div class="priceOriginal">
+                        <span>20,000원</span>
+                      </div>
                     </div>
                   </div>
-                </div>
-              </a>
-            </li>
-            <li class="productItem">
-              <a href="#" class="productLink">
-                <div class="thumb">
-                  <picture>
-                    <source srcset="img/포트폴리오1920.png" type="image/png" />
-                    <img src="img/포트폴리오1920.png" alt="베스트상품 이미지" />
-                  </picture>
-                </div>
-                <div class="thumbText">
-                  <div class="title">
-                    <span>title</span>
+                </a>
+              </li>
+              <li class="productItem swiper-slide">
+                <a href="#" class="productLink">
+                  <div class="thumb">
+                    <picture>
+                      <source
+                        srcset="img/포트폴리오1920.png"
+                        type="image/png"
+                      />
+                      <img
+                        src="img/포트폴리오1920.png"
+                        alt="베스트상품 이미지"
+                      />
+                    </picture>
                   </div>
-                  <div class="price">
-                    <div class="priceCurrent">
-                      <span>12,000원</span>
+                  <div class="thumbText">
+                    <div class="title">
+                      <span>title</span>
                     </div>
-                    <div class="priceOriginal">
-                      <span>20,000원</span>
-                    </div>
-                  </div>
-                </div>
-              </a>
-            </li>
-            <li class="productItem">
-              <a href="#" class="productLink">
-                <div class="thumb">
-                  <picture>
-                    <source srcset="img/포트폴리오1920.png" type="image/png" />
-                    <img src="img/포트폴리오1920.png" alt="베스트상품 이미지" />
-                  </picture>
-                </div>
-                <div class="thumbText">
-                  <div class="title">
-                    <span>title</span>
-                  </div>
-                  <div class="price">
-                    <div class="priceCurrent">
-                      <span>12,000원</span>
-                    </div>
-                    <div class="priceOriginal">
-                      <span>20,000원</span>
+                    <div class="price">
+                      <div class="priceCurrent">
+                        <span>12,000원</span>
+                      </div>
+                      <div class="priceOriginal">
+                        <span>20,000원</span>
+                      </div>
                     </div>
                   </div>
-                </div>
-              </a>
-            </li>
-          </ul>
+                </a>
+              </li>
+              <li class="productItem swiper-slide">
+                <a href="#" class="productLink">
+                  <div class="thumb">
+                    <picture>
+                      <source
+                        srcset="img/포트폴리오1920.png"
+                        type="image/png"
+                      />
+                      <img
+                        src="img/포트폴리오1920.png"
+                        alt="베스트상품 이미지"
+                      />
+                    </picture>
+                  </div>
+                  <div class="thumbText">
+                    <div class="title">
+                      <span>title</span>
+                    </div>
+                    <div class="price">
+                      <div class="priceCurrent">
+                        <span>12,000원</span>
+                      </div>
+                      <div class="priceOriginal">
+                        <span>20,000원</span>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </li>
+              <li class="productItem swiper-slide">
+                <a href="#" class="productLink">
+                  <div class="thumb">
+                    <picture>
+                      <source
+                        srcset="img/포트폴리오1920.png"
+                        type="image/png"
+                      />
+                      <img
+                        src="img/포트폴리오1920.png"
+                        alt="베스트상품 이미지"
+                      />
+                    </picture>
+                  </div>
+                  <div class="thumbText">
+                    <div class="title">
+                      <span>title</span>
+                    </div>
+                    <div class="price">
+                      <div class="priceCurrent">
+                        <span>12,000원</span>
+                      </div>
+                      <div class="priceOriginal">
+                        <span>20,000원</span>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </li>
+              <li class="productItem swiper-slide">
+                <a href="#" class="productLink">
+                  <div class="thumb">
+                    <picture>
+                      <source
+                        srcset="img/포트폴리오1920.png"
+                        type="image/png"
+                      />
+                      <img
+                        src="img/포트폴리오1920.png"
+                        alt="베스트상품 이미지"
+                      />
+                    </picture>
+                  </div>
+                  <div class="thumbText">
+                    <div class="title">
+                      <span>title</span>
+                    </div>
+                    <div class="price">
+                      <div class="priceCurrent">
+                        <span>12,000원</span>
+                      </div>
+                      <div class="priceOriginal">
+                        <span>20,000원</span>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
         <div class="categoryBox">
           <h2 class="categoryTitle">식기세척기</h2>
-          <ul class="productList">
-            <li class="productItem">
-              <a href="#" class="productLink">
-                <div class="thumb">
-                  <picture>
-                    <source srcset="img/포트폴리오1920.png" type="image/png" />
-                    <img src="img/포트폴리오1920.png" alt="식기세척기 이미지" />
-                  </picture>
-                </div>
-                <div class="thumbText">
-                  <div class="title">
-                    <span>title</span>
+          <div class="productWrap swiper productSwiper">
+            <ul class="productList swiper-wrapper">
+              <li class="productItem swiper-slide">
+                <a href="#" class="productLink">
+                  <div class="thumb">
+                    <picture>
+                      <source
+                        srcset="img/포트폴리오1920.png"
+                        type="image/png"
+                      />
+                      <img
+                        src="img/포트폴리오1920.png"
+                        alt="베스트상품 이미지"
+                      />
+                    </picture>
                   </div>
-                  <div class="price">
-                    <div class="priceCurrent">
-                      <span>12,000원</span>
+                  <div class="thumbText">
+                    <div class="title">
+                      <span>title</span>
                     </div>
-                    <div class="priceOriginal">
-                      <span>20,000원</span>
-                    </div>
-                  </div>
-                </div>
-              </a>
-            </li>
-            <li class="productItem">
-              <a href="#" class="productLink">
-                <div class="thumb">
-                  <picture>
-                    <source srcset="img/포트폴리오1920.png" type="image/png" />
-                    <img src="img/포트폴리오1920.png" alt="식기세척기 이미지" />
-                  </picture>
-                </div>
-                <div class="thumbText">
-                  <div class="title">
-                    <span>title</span>
-                  </div>
-                  <div class="price">
-                    <div class="priceCurrent">
-                      <span>12,000원</span>
-                    </div>
-                    <div class="priceOriginal">
-                      <span>20,000원</span>
+                    <div class="price">
+                      <div class="priceCurrent">
+                        <span>12,000원</span>
+                      </div>
+                      <div class="priceOriginal">
+                        <span>20,000원</span>
+                      </div>
                     </div>
                   </div>
-                </div>
-              </a>
-            </li>
-            <li class="productItem">
-              <a href="#" class="productLink">
-                <div class="thumb">
-                  <picture>
-                    <source srcset="img/포트폴리오1920.png" type="image/png" />
-                    <img src="img/포트폴리오1920.png" alt="식기세척기 이미지" />
-                  </picture>
-                </div>
-                <div class="thumbText">
-                  <div class="title">
-                    <span>title</span>
+                </a>
+              </li>
+              <li class="productItem swiper-slide">
+                <a href="#" class="productLink">
+                  <div class="thumb">
+                    <picture>
+                      <source
+                        srcset="img/포트폴리오1920.png"
+                        type="image/png"
+                      />
+                      <img
+                        src="img/포트폴리오1920.png"
+                        alt="베스트상품 이미지"
+                      />
+                    </picture>
                   </div>
-                  <div class="price">
-                    <div class="priceCurrent">
-                      <span>12,000원</span>
+                  <div class="thumbText">
+                    <div class="title">
+                      <span>title</span>
                     </div>
-                    <div class="priceOriginal">
-                      <span>20,000원</span>
-                    </div>
-                  </div>
-                </div>
-              </a>
-            </li>
-            <li class="productItem">
-              <a href="#" class="productLink">
-                <div class="thumb">
-                  <picture>
-                    <source srcset="img/포트폴리오1920.png" type="image/png" />
-                    <img src="img/포트폴리오1920.png" alt="식기세척기 이미지" />
-                  </picture>
-                </div>
-                <div class="thumbText">
-                  <div class="title">
-                    <span>title</span>
-                  </div>
-                  <div class="price">
-                    <div class="priceCurrent">
-                      <span>12,000원</span>
-                    </div>
-                    <div class="priceOriginal">
-                      <span>20,000원</span>
+                    <div class="price">
+                      <div class="priceCurrent">
+                        <span>12,000원</span>
+                      </div>
+                      <div class="priceOriginal">
+                        <span>20,000원</span>
+                      </div>
                     </div>
                   </div>
-                </div>
-              </a>
-            </li>
-            <li class="productItem">
-              <a href="#" class="productLink">
-                <div class="thumb">
-                  <picture>
-                    <source srcset="img/포트폴리오1920.png" type="image/png" />
-                    <img src="img/포트폴리오1920.png" alt="식기세척기 이미지" />
-                  </picture>
-                </div>
-                <div class="thumbText">
-                  <div class="title">
-                    <span>title</span>
+                </a>
+              </li>
+              <li class="productItem swiper-slide">
+                <a href="#" class="productLink">
+                  <div class="thumb">
+                    <picture>
+                      <source
+                        srcset="img/포트폴리오1920.png"
+                        type="image/png"
+                      />
+                      <img
+                        src="img/포트폴리오1920.png"
+                        alt="베스트상품 이미지"
+                      />
+                    </picture>
                   </div>
-                  <div class="price">
-                    <div class="priceCurrent">
-                      <span>12,000원</span>
+                  <div class="thumbText">
+                    <div class="title">
+                      <span>title</span>
                     </div>
-                    <div class="priceOriginal">
-                      <span>20,000원</span>
-                    </div>
-                  </div>
-                </div>
-              </a>
-            </li>
-            <li class="productItem">
-              <a href="#" class="productLink">
-                <div class="thumb">
-                  <picture>
-                    <source srcset="img/포트폴리오1920.png" type="image/png" />
-                    <img src="img/포트폴리오1920.png" alt="식기세척기 이미지" />
-                  </picture>
-                </div>
-                <div class="thumbText">
-                  <div class="title">
-                    <span>title</span>
-                  </div>
-                  <div class="price">
-                    <div class="priceCurrent">
-                      <span>12,000원</span>
-                    </div>
-                    <div class="priceOriginal">
-                      <span>20,000원</span>
+                    <div class="price">
+                      <div class="priceCurrent">
+                        <span>12,000원</span>
+                      </div>
+                      <div class="priceOriginal">
+                        <span>20,000원</span>
+                      </div>
                     </div>
                   </div>
-                </div>
-              </a>
-            </li>
-          </ul>
+                </a>
+              </li>
+              <li class="productItem swiper-slide">
+                <a href="#" class="productLink">
+                  <div class="thumb">
+                    <picture>
+                      <source
+                        srcset="img/포트폴리오1920.png"
+                        type="image/png"
+                      />
+                      <img
+                        src="img/포트폴리오1920.png"
+                        alt="베스트상품 이미지"
+                      />
+                    </picture>
+                  </div>
+                  <div class="thumbText">
+                    <div class="title">
+                      <span>title</span>
+                    </div>
+                    <div class="price">
+                      <div class="priceCurrent">
+                        <span>12,000원</span>
+                      </div>
+                      <div class="priceOriginal">
+                        <span>20,000원</span>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </li>
+              <li class="productItem swiper-slide">
+                <a href="#" class="productLink">
+                  <div class="thumb">
+                    <picture>
+                      <source
+                        srcset="img/포트폴리오1920.png"
+                        type="image/png"
+                      />
+                      <img
+                        src="img/포트폴리오1920.png"
+                        alt="베스트상품 이미지"
+                      />
+                    </picture>
+                  </div>
+                  <div class="thumbText">
+                    <div class="title">
+                      <span>title</span>
+                    </div>
+                    <div class="price">
+                      <div class="priceCurrent">
+                        <span>12,000원</span>
+                      </div>
+                      <div class="priceOriginal">
+                        <span>20,000원</span>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </li>
+              <li class="productItem swiper-slide">
+                <a href="#" class="productLink">
+                  <div class="thumb">
+                    <picture>
+                      <source
+                        srcset="img/포트폴리오1920.png"
+                        type="image/png"
+                      />
+                      <img
+                        src="img/포트폴리오1920.png"
+                        alt="베스트상품 이미지"
+                      />
+                    </picture>
+                  </div>
+                  <div class="thumbText">
+                    <div class="title">
+                      <span>title</span>
+                    </div>
+                    <div class="price">
+                      <div class="priceCurrent">
+                        <span>12,000원</span>
+                      </div>
+                      <div class="priceOriginal">
+                        <span>20,000원</span>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
         <div class="categoryBox">
           <h2 class="categoryTitle">인덕션</h2>
-          <ul class="productList">
-            <li class="productItem">
-              <a href="#" class="productLink">
-                <div class="thumb">
-                  <picture>
-                    <source srcset="img/포트폴리오1920.png" type="image/png" />
-                    <img src="img/포트폴리오1920.png" alt="인덕션 이미지" />
-                  </picture>
-                </div>
-                <div class="thumbText">
-                  <div class="title">
-                    <span>title</span>
+          <div class="productWrap swiper productSwiper">
+            <ul class="productList swiper-wrapper">
+              <li class="productItem swiper-slide">
+                <a href="#" class="productLink">
+                  <div class="thumb">
+                    <picture>
+                      <source
+                        srcset="img/포트폴리오1920.png"
+                        type="image/png"
+                      />
+                      <img
+                        src="img/포트폴리오1920.png"
+                        alt="베스트상품 이미지"
+                      />
+                    </picture>
                   </div>
-                  <div class="price">
-                    <div class="priceCurrent">
-                      <span>12,000원</span>
+                  <div class="thumbText">
+                    <div class="title">
+                      <span>title</span>
                     </div>
-                    <div class="priceOriginal">
-                      <span>20,000원</span>
-                    </div>
-                  </div>
-                </div>
-              </a>
-            </li>
-            <li class="productItem">
-              <a href="#" class="productLink">
-                <div class="thumb">
-                  <picture>
-                    <source srcset="img/포트폴리오1920.png" type="image/png" />
-                    <img src="img/포트폴리오1920.png" alt="인덕션 이미지" />
-                  </picture>
-                </div>
-                <div class="thumbText">
-                  <div class="title">
-                    <span>title</span>
-                  </div>
-                  <div class="price">
-                    <div class="priceCurrent">
-                      <span>12,000원</span>
-                    </div>
-                    <div class="priceOriginal">
-                      <span>20,000원</span>
+                    <div class="price">
+                      <div class="priceCurrent">
+                        <span>12,000원</span>
+                      </div>
+                      <div class="priceOriginal">
+                        <span>20,000원</span>
+                      </div>
                     </div>
                   </div>
-                </div>
-              </a>
-            </li>
-            <li class="productItem">
-              <a href="#" class="productLink">
-                <div class="thumb">
-                  <picture>
-                    <source srcset="img/포트폴리오1920.png" type="image/png" />
-                    <img src="img/포트폴리오1920.png" alt="인덕션 이미지" />
-                  </picture>
-                </div>
-                <div class="thumbText">
-                  <div class="title">
-                    <span>title</span>
+                </a>
+              </li>
+              <li class="productItem swiper-slide">
+                <a href="#" class="productLink">
+                  <div class="thumb">
+                    <picture>
+                      <source
+                        srcset="img/포트폴리오1920.png"
+                        type="image/png"
+                      />
+                      <img
+                        src="img/포트폴리오1920.png"
+                        alt="베스트상품 이미지"
+                      />
+                    </picture>
                   </div>
-                  <div class="price">
-                    <div class="priceCurrent">
-                      <span>12,000원</span>
+                  <div class="thumbText">
+                    <div class="title">
+                      <span>title</span>
                     </div>
-                    <div class="priceOriginal">
-                      <span>20,000원</span>
-                    </div>
-                  </div>
-                </div>
-              </a>
-            </li>
-            <li class="productItem">
-              <a href="#" class="productLink">
-                <div class="thumb">
-                  <picture>
-                    <source srcset="img/포트폴리오1920.png" type="image/png" />
-                    <img src="img/포트폴리오1920.png" alt="인덕션 이미지" />
-                  </picture>
-                </div>
-                <div class="thumbText">
-                  <div class="title">
-                    <span>title</span>
-                  </div>
-                  <div class="price">
-                    <div class="priceCurrent">
-                      <span>12,000원</span>
-                    </div>
-                    <div class="priceOriginal">
-                      <span>20,000원</span>
+                    <div class="price">
+                      <div class="priceCurrent">
+                        <span>12,000원</span>
+                      </div>
+                      <div class="priceOriginal">
+                        <span>20,000원</span>
+                      </div>
                     </div>
                   </div>
-                </div>
-              </a>
-            </li>
-            <li class="productItem">
-              <a href="#" class="productLink">
-                <div class="thumb">
-                  <picture>
-                    <source srcset="img/포트폴리오1920.png" type="image/png" />
-                    <img src="img/포트폴리오1920.png" alt="인덕션 이미지" />
-                  </picture>
-                </div>
-                <div class="thumbText">
-                  <div class="title">
-                    <span>title</span>
+                </a>
+              </li>
+              <li class="productItem swiper-slide">
+                <a href="#" class="productLink">
+                  <div class="thumb">
+                    <picture>
+                      <source
+                        srcset="img/포트폴리오1920.png"
+                        type="image/png"
+                      />
+                      <img
+                        src="img/포트폴리오1920.png"
+                        alt="베스트상품 이미지"
+                      />
+                    </picture>
                   </div>
-                  <div class="price">
-                    <div class="priceCurrent">
-                      <span>12,000원</span>
+                  <div class="thumbText">
+                    <div class="title">
+                      <span>title</span>
                     </div>
-                    <div class="priceOriginal">
-                      <span>20,000원</span>
-                    </div>
-                  </div>
-                </div>
-              </a>
-            </li>
-            <li class="productItem">
-              <a href="#" class="productLink">
-                <div class="thumb">
-                  <picture>
-                    <source srcset="img/포트폴리오1920.png" type="image/png" />
-                    <img src="img/포트폴리오1920.png" alt="인덕션 이미지" />
-                  </picture>
-                </div>
-                <div class="thumbText">
-                  <div class="title">
-                    <span>title</span>
-                  </div>
-                  <div class="price">
-                    <div class="priceCurrent">
-                      <span>12,000원</span>
-                    </div>
-                    <div class="priceOriginal">
-                      <span>20,000원</span>
+                    <div class="price">
+                      <div class="priceCurrent">
+                        <span>12,000원</span>
+                      </div>
+                      <div class="priceOriginal">
+                        <span>20,000원</span>
+                      </div>
                     </div>
                   </div>
-                </div>
-              </a>
-            </li>
-          </ul>
+                </a>
+              </li>
+              <li class="productItem swiper-slide">
+                <a href="#" class="productLink">
+                  <div class="thumb">
+                    <picture>
+                      <source
+                        srcset="img/포트폴리오1920.png"
+                        type="image/png"
+                      />
+                      <img
+                        src="img/포트폴리오1920.png"
+                        alt="베스트상품 이미지"
+                      />
+                    </picture>
+                  </div>
+                  <div class="thumbText">
+                    <div class="title">
+                      <span>title</span>
+                    </div>
+                    <div class="price">
+                      <div class="priceCurrent">
+                        <span>12,000원</span>
+                      </div>
+                      <div class="priceOriginal">
+                        <span>20,000원</span>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </li>
+              <li class="productItem swiper-slide">
+                <a href="#" class="productLink">
+                  <div class="thumb">
+                    <picture>
+                      <source
+                        srcset="img/포트폴리오1920.png"
+                        type="image/png"
+                      />
+                      <img
+                        src="img/포트폴리오1920.png"
+                        alt="베스트상품 이미지"
+                      />
+                    </picture>
+                  </div>
+                  <div class="thumbText">
+                    <div class="title">
+                      <span>title</span>
+                    </div>
+                    <div class="price">
+                      <div class="priceCurrent">
+                        <span>12,000원</span>
+                      </div>
+                      <div class="priceOriginal">
+                        <span>20,000원</span>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </li>
+              <li class="productItem swiper-slide">
+                <a href="#" class="productLink">
+                  <div class="thumb">
+                    <picture>
+                      <source
+                        srcset="img/포트폴리오1920.png"
+                        type="image/png"
+                      />
+                      <img
+                        src="img/포트폴리오1920.png"
+                        alt="베스트상품 이미지"
+                      />
+                    </picture>
+                  </div>
+                  <div class="thumbText">
+                    <div class="title">
+                      <span>title</span>
+                    </div>
+                    <div class="price">
+                      <div class="priceCurrent">
+                        <span>12,000원</span>
+                      </div>
+                      <div class="priceOriginal">
+                        <span>20,000원</span>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
         <div class="categoryBox">
           <h2 class="categoryTitle">청소기</h2>
-          <ul class="productList">
-            <li class="productItem">
-              <a href="#" class="productLink">
-                <div class="thumb">
-                  <picture>
-                    <source srcset="img/포트폴리오1920.png" type="image/png" />
-                    <img src="img/포트폴리오1920.png" alt="청소기 이미지" />
-                  </picture>
-                </div>
-                <div class="thumbText">
-                  <div class="title">
-                    <span>title</span>
+          <div class="productWrap swiper productSwiper">
+            <ul class="productList swiper-wrapper">
+              <li class="productItem swiper-slide">
+                <a href="#" class="productLink">
+                  <div class="thumb">
+                    <picture>
+                      <source
+                        srcset="img/포트폴리오1920.png"
+                        type="image/png"
+                      />
+                      <img
+                        src="img/포트폴리오1920.png"
+                        alt="베스트상품 이미지"
+                      />
+                    </picture>
                   </div>
-                  <div class="price">
-                    <div class="priceCurrent">
-                      <span>12,000원</span>
+                  <div class="thumbText">
+                    <div class="title">
+                      <span>title</span>
                     </div>
-                    <div class="priceOriginal">
-                      <span>20,000원</span>
-                    </div>
-                  </div>
-                </div>
-              </a>
-            </li>
-            <li class="productItem">
-              <a href="#" class="productLink">
-                <div class="thumb">
-                  <picture>
-                    <source srcset="img/포트폴리오1920.png" type="image/png" />
-                    <img src="img/포트폴리오1920.png" alt="청소기 이미지" />
-                  </picture>
-                </div>
-                <div class="thumbText">
-                  <div class="title">
-                    <span>title</span>
-                  </div>
-                  <div class="price">
-                    <div class="priceCurrent">
-                      <span>12,000원</span>
-                    </div>
-                    <div class="priceOriginal">
-                      <span>20,000원</span>
+                    <div class="price">
+                      <div class="priceCurrent">
+                        <span>12,000원</span>
+                      </div>
+                      <div class="priceOriginal">
+                        <span>20,000원</span>
+                      </div>
                     </div>
                   </div>
-                </div>
-              </a>
-            </li>
-            <li class="productItem">
-              <a href="#" class="productLink">
-                <div class="thumb">
-                  <picture>
-                    <source srcset="img/포트폴리오1920.png" type="image/png" />
-                    <img src="img/포트폴리오1920.png" alt="청소기 이미지" />
-                  </picture>
-                </div>
-                <div class="thumbText">
-                  <div class="title">
-                    <span>title</span>
+                </a>
+              </li>
+              <li class="productItem swiper-slide">
+                <a href="#" class="productLink">
+                  <div class="thumb">
+                    <picture>
+                      <source
+                        srcset="img/포트폴리오1920.png"
+                        type="image/png"
+                      />
+                      <img
+                        src="img/포트폴리오1920.png"
+                        alt="베스트상품 이미지"
+                      />
+                    </picture>
                   </div>
-                  <div class="price">
-                    <div class="priceCurrent">
-                      <span>12,000원</span>
+                  <div class="thumbText">
+                    <div class="title">
+                      <span>title</span>
                     </div>
-                    <div class="priceOriginal">
-                      <span>20,000원</span>
-                    </div>
-                  </div>
-                </div>
-              </a>
-            </li>
-            <li class="productItem">
-              <a href="#" class="productLink">
-                <div class="thumb">
-                  <picture>
-                    <source srcset="img/포트폴리오1920.png" type="image/png" />
-                    <img src="img/포트폴리오1920.png" alt="청소기 이미지" />
-                  </picture>
-                </div>
-                <div class="thumbText">
-                  <div class="title">
-                    <span>title</span>
-                  </div>
-                  <div class="price">
-                    <div class="priceCurrent">
-                      <span>12,000원</span>
-                    </div>
-                    <div class="priceOriginal">
-                      <span>20,000원</span>
+                    <div class="price">
+                      <div class="priceCurrent">
+                        <span>12,000원</span>
+                      </div>
+                      <div class="priceOriginal">
+                        <span>20,000원</span>
+                      </div>
                     </div>
                   </div>
-                </div>
-              </a>
-            </li>
-            <li class="productItem">
-              <a href="#" class="productLink">
-                <div class="thumb">
-                  <picture>
-                    <source srcset="img/포트폴리오1920.png" type="image/png" />
-                    <img src="img/포트폴리오1920.png" alt="청소기 이미지" />
-                  </picture>
-                </div>
-                <div class="thumbText">
-                  <div class="title">
-                    <span>title</span>
+                </a>
+              </li>
+              <li class="productItem swiper-slide">
+                <a href="#" class="productLink">
+                  <div class="thumb">
+                    <picture>
+                      <source
+                        srcset="img/포트폴리오1920.png"
+                        type="image/png"
+                      />
+                      <img
+                        src="img/포트폴리오1920.png"
+                        alt="베스트상품 이미지"
+                      />
+                    </picture>
                   </div>
-                  <div class="price">
-                    <div class="priceCurrent">
-                      <span>12,000원</span>
+                  <div class="thumbText">
+                    <div class="title">
+                      <span>title</span>
                     </div>
-                    <div class="priceOriginal">
-                      <span>20,000원</span>
-                    </div>
-                  </div>
-                </div>
-              </a>
-            </li>
-            <li class="productItem">
-              <a href="#" class="productLink">
-                <div class="thumb">
-                  <picture>
-                    <source srcset="img/포트폴리오1920.png" type="image/png" />
-                    <img src="img/포트폴리오1920.png" alt="청소기 이미지" />
-                  </picture>
-                </div>
-                <div class="thumbText">
-                  <div class="title">
-                    <span>title</span>
-                  </div>
-                  <div class="price">
-                    <div class="priceCurrent">
-                      <span>12,000원</span>
-                    </div>
-                    <div class="priceOriginal">
-                      <span>20,000원</span>
+                    <div class="price">
+                      <div class="priceCurrent">
+                        <span>12,000원</span>
+                      </div>
+                      <div class="priceOriginal">
+                        <span>20,000원</span>
+                      </div>
                     </div>
                   </div>
-                </div>
-              </a>
-            </li>
-          </ul>
+                </a>
+              </li>
+              <li class="productItem swiper-slide">
+                <a href="#" class="productLink">
+                  <div class="thumb">
+                    <picture>
+                      <source
+                        srcset="img/포트폴리오1920.png"
+                        type="image/png"
+                      />
+                      <img
+                        src="img/포트폴리오1920.png"
+                        alt="베스트상품 이미지"
+                      />
+                    </picture>
+                  </div>
+                  <div class="thumbText">
+                    <div class="title">
+                      <span>title</span>
+                    </div>
+                    <div class="price">
+                      <div class="priceCurrent">
+                        <span>12,000원</span>
+                      </div>
+                      <div class="priceOriginal">
+                        <span>20,000원</span>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </li>
+              <li class="productItem swiper-slide">
+                <a href="#" class="productLink">
+                  <div class="thumb">
+                    <picture>
+                      <source
+                        srcset="img/포트폴리오1920.png"
+                        type="image/png"
+                      />
+                      <img
+                        src="img/포트폴리오1920.png"
+                        alt="베스트상품 이미지"
+                      />
+                    </picture>
+                  </div>
+                  <div class="thumbText">
+                    <div class="title">
+                      <span>title</span>
+                    </div>
+                    <div class="price">
+                      <div class="priceCurrent">
+                        <span>12,000원</span>
+                      </div>
+                      <div class="priceOriginal">
+                        <span>20,000원</span>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </li>
+              <li class="productItem swiper-slide">
+                <a href="#" class="productLink">
+                  <div class="thumb">
+                    <picture>
+                      <source
+                        srcset="img/포트폴리오1920.png"
+                        type="image/png"
+                      />
+                      <img
+                        src="img/포트폴리오1920.png"
+                        alt="베스트상품 이미지"
+                      />
+                    </picture>
+                  </div>
+                  <div class="thumbText">
+                    <div class="title">
+                      <span>title</span>
+                    </div>
+                    <div class="price">
+                      <div class="priceCurrent">
+                        <span>12,000원</span>
+                      </div>
+                      <div class="priceOriginal">
+                        <span>20,000원</span>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
       </section>
       <section class="showcase">
@@ -930,5 +1092,8 @@
         </div>
       </div>
     </footer>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="main.js"></script>
   </body>
 </html>

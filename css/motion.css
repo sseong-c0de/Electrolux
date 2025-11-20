@@ -1,0 +1,39 @@
+.scaleHover {
+  transition: transform 0.25s ease;
+}
+.navLink a > span,
+.subLink {
+  position: relative;
+  display: inline-block;
+}
+.navLink a > span::after,
+.subLink::after {
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0%;
+  height: 2px;
+  background: #000;
+  transition: width 0.3s ease;
+}
+.showcaseItem {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.3s ease;
+}
+/* 애니메이션 후 */
+.scaleHover:hover {
+  transform: scale(1.1);
+}
+.navActive {
+  left: 0%;
+}
+.navLink a:hover > span:nth-child(1)::after,
+.subLink:hover::after {
+  width: 100%;
+}
+.active {
+  opacity: 1;
+  transform: translateY(0);
+}
