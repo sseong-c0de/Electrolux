@@ -180,15 +180,11 @@ nav {
   margin-top: 100px;
 }
 .categoryBox {
-  width: 100%;
-  overflow: hidden;
-  /* width:83.33% */
-  /* margin: 0 auto; */
+  width: 91.66%;
+  margin-left: auto;
 }
 .categoryBox .productWrap {
   width: 100%;
-  margin-left: 8.33%;
-  margin-right: 0;
 }
 .categoryTitle {
   font-size: 3rem;
@@ -203,7 +199,6 @@ nav {
 }
 .productItem {
   width: 100%;
-  max-width: 222px;
 }
 .productLink {
   display: block;
@@ -212,7 +207,9 @@ nav {
 }
 .thumb {
   width: 100%;
-  height: 222px;
+  height: 100%;
+
+  overflow: hidden;
 }
 .thumb picture {
   display: block;
@@ -240,6 +237,9 @@ nav {
 .priceOriginal span {
   font-size: 1.6rem;
   text-decoration: line-through;
+}
+.swiper-scrollbar {
+  display: none;
 }
 .showcase {
   margin-top: 100px;

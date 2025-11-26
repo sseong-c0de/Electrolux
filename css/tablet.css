@@ -89,12 +89,11 @@
     margin-bottom: 0;
   }
   .subMenuNavi {
-    display: none;
     width: 100%;
     height: 100%;
     position: fixed;
     top: 0;
-    left: 0;
+    left: -100%;
     background: rgb(134, 131, 131);
   }
   .subMenuHeader {
@@ -173,8 +172,8 @@
     margin-top: 100px;
   }
   .categoryBox {
-    width: 86.98%;
-    margin: 0 auto;
+    width: 93.49%;
+    margin-left: auto;
   }
   .categoryTitle {
     font-size: 3rem;
@@ -185,8 +184,7 @@
     width: 100%;
   }
   .productItem {
-    width: 35.63%;
-    max-width: 238px;
+    width: 100%;
   }
   .productLink {
     display: block;
@@ -195,7 +193,7 @@
   }
   .thumb {
     width: 100%;
-    height: 238px;
+    height: 100%;
   }
   .thumb picture {
     display: block;

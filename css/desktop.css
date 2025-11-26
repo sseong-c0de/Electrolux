@@ -217,7 +217,6 @@
   }
   .productItem {
     width: 25%;
-    max-width: 365px;
   }
   .productLink {
     display: block;
@@ -226,7 +225,6 @@
   }
   .thumb {
     width: 100%;
-    height: 365px;
   }
   .thumb picture {
     display: block;
