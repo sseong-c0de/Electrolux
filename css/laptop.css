@@ -7,7 +7,7 @@
     width: 88.28%;
     height: 90px;
     margin: 0 auto;
-    background: rgb(83, 102, 5);
+    border-bottom: 1px solid #000;
   }
   .headerTopInner {
     width: 100%;
@@ -60,7 +60,7 @@
     width: 88.28%;
     height: auto;
     margin: 0 auto;
-    background: #9b7575;
+    background: none;
   }
   .closeBtn {
     display: none;
@@ -200,7 +200,6 @@
     display: block;
     width: 80px;
     height: 80px;
-    background: red;
     border-radius: 20px;
     margin-bottom: 20px;
   }
@@ -233,7 +232,9 @@
     height: 100%;
   }
   .thumb {
-    width: 100%;
+    width: 70%;
+    height: 100%;
+    margin: 0 auto;
     /* height: 288px; */
   }
   .thumb picture {
@@ -278,6 +279,9 @@
     height: 500px;
     color: #d9d9d9;
     position: relative;
+  }
+  .showcaseThumb:hover .dot {
+    color: rgb(32, 13, 82);
   }
   .showcaseThumb img {
     width: 100%;
@@ -356,7 +360,6 @@
     width: 125px;
     height: 125px;
     border-radius: 30px;
-    background: #9b7575;
     margin: 0 auto;
   }
   .serviceTitle {
@@ -393,7 +396,6 @@
     width: 250px;
     height: 50px;
     margin: 0 auto 30px;
-    background: #000000;
   }
   .footerInfo {
     float: left;
@@ -428,7 +430,6 @@
     width: 80px;
     height: 80px;
     border-radius: 20px;
-    background: #000;
   }
   .footerNotice {
     margin-top: 30px;

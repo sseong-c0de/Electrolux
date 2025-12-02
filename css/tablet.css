@@ -7,7 +7,6 @@
     width: 86.98%;
     height: 65px;
     margin: 0 auto;
-    background: rgb(83, 102, 5);
   }
   .headerTopInner {
     width: 100%;
@@ -55,7 +54,7 @@
     height: 100%;
     left: -100%;
     top: 0;
-    background: #9b7575;
+    background: #fff;
     z-index: 2;
   }
   .gnb {
@@ -94,7 +93,7 @@
     position: fixed;
     top: 0;
     left: -100%;
-    background: rgb(134, 131, 131);
+    background: #fff;
   }
   .subMenuHeader {
     width: 100%;
@@ -160,7 +159,6 @@
     display: block;
     width: 50px;
     height: 50px;
-    background: red;
     border-radius: 15px;
     margin-bottom: 20px;
   }
@@ -192,7 +190,7 @@
     height: 100%;
   }
   .thumb {
-    width: 100%;
+    width: 70%;
     height: 100%;
   }
   .thumb picture {
@@ -311,7 +309,7 @@
     width: 125px;
     height: 125px;
     border-radius: 30px;
-    background: #9b7575;
+
     margin: 0 auto;
   }
   .serviceTitle {
@@ -348,7 +346,6 @@
     width: 250px;
     height: 50px;
     margin: 0 auto 30px;
-    background: #000000;
   }
   .footerInfo p {
     margin-bottom: 10px;
@@ -373,7 +370,6 @@
     width: 80px;
     height: 80px;
     border-radius: 20px;
-    background: #000;
   }
   .footerNotice {
     margin-top: 30px;

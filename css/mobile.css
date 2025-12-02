@@ -6,7 +6,6 @@
   width: 83.33%;
   height: 65px;
   margin: 0 auto;
-  background: rgb(101, 101, 143);
 }
 .headerTopInner {
   width: 100%;
@@ -54,7 +53,7 @@ nav {
   height: 100%;
   left: -100%;
   top: 0;
-  background: #9b7575;
+  background: #fff;
   transition: left 0.3s ease;
   z-index: 2;
 }
@@ -100,7 +99,7 @@ nav {
   position: fixed;
   top: 0;
   left: -100%;
-  background: rgb(134, 131, 131);
+  background: #fff;
   transition: left 0.3s ease;
   z-index: 2;
 }
@@ -168,7 +167,7 @@ nav {
   display: block;
   width: 50px;
   height: 50px;
-  background: red;
+
   border-radius: 15px;
   margin: 0 auto 20px;
 }
@@ -206,9 +205,9 @@ nav {
   height: 100%;
 }
 .thumb {
-  width: 100%;
+  width: 70%;
   height: 100%;
-
+  margin: 0 auto;
   overflow: hidden;
 }
 .thumb picture {
@@ -256,6 +255,9 @@ nav {
   color: #d9d9d9;
   position: relative;
 }
+.showcaseThumb:hover .dot {
+  background: #180b43;
+}
 .showcaseThumb img {
   width: 100%;
   height: 100%;
@@ -300,6 +302,7 @@ nav {
   border-radius: 15px;
   background: #d9d9d9;
   margin-left: 10px;
+  transition: all 0.1s ease-in;
 }
 .subscription {
   margin-top: 100px;
@@ -325,12 +328,31 @@ nav {
   width: 100%;
   text-align: center;
 }
+
 .serviceIcon {
   width: 125px;
   height: 125px;
   border-radius: 30px;
-  background: #9b7575;
+  background: url("../img/선택.png") center/cover no-repeat;
   margin: 0 auto;
+}
+.serviceTop .serviceCard:nth-child(2) .serviceIcon {
+  background: url("../img/타이머.png") center/cover no-repeat;
+}
+.serviceBottom .serviceCard:nth-child(1) .serviceIcon {
+  background: url("../img/배송.png") center/cover no-repeat;
+}
+.serviceBottom .serviceCard:nth-child(2) .serviceIcon {
+  background: url("../img/할인.png") center/cover no-repeat;
+}
+.stepTop .serviceCard:nth-child(2) .serviceIcon {
+  background: url("../img/달력.png") center/cover no-repeat;
+}
+.stepBottom .serviceCard:nth-child(1) .serviceIcon {
+  background: url("../img/카드.png") center/cover no-repeat;
+}
+.stepBottom .serviceCard:nth-child(2) .serviceIcon {
+  background: url("../img/배송.png") center/cover no-repeat;
 }
 .serviceTitle {
   font-size: 2rem;
@@ -366,7 +388,7 @@ footer {
   width: 250px;
   height: 50px;
   margin: 0 auto 30px;
-  background: #000000;
+  background: url("/img/pngegg.png") center/cover no-repeat;
 }
 .footerInfo p {
   margin-bottom: 5px;
@@ -391,10 +413,19 @@ footer {
   width: 80px;
   height: 80px;
   border-radius: 20px;
-  background: #000;
+  background: url("../img/Facebook.png") no-repeat center/cover;
+}
+.icon:nth-of-type(2) {
+  background: url("../img/Instagram.png") no-repeat center/cover;
+}
+.icon:nth-of-type(3) {
+  background: url("../img/YouTube\ Squared.png") no-repeat center/cover;
 }
 .footerNotice {
   margin-top: 30px;
   padding-bottom: 30px;
   line-height: 1.5;
+}
+.copyright {
+  font-size: 1rem;
 }
