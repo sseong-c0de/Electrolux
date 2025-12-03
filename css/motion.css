@@ -45,9 +45,18 @@
 }
 
 @media screen and (min-width: 1024px) {
-  .navLink a > span::after,
-  .subLink::after {
+  .navLink a > span::after {
     display: none;
+    content: "";
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 0%;
+    height: 2px;
+    background: #000;
+    transition: width 0.3s ease;
+  }
+  .navLink a > .subLink::after {
     content: "";
     position: absolute;
     bottom: -2px;
